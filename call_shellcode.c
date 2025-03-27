@@ -2,6 +2,7 @@
 /*A program that launches a shell using shellcode*/
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 const char code[] =
     "\x31\xc0" /*Line 1: xorl %eax,%eax*/
     "\x50"     /*Line 2: pushl %eax*/
